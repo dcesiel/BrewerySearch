@@ -6,11 +6,11 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <form>
+      <form [formGroup]="searchForm">
         <div class="row">
           <div class="col-sm-8">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Zip Code"/>
+              <input formControlName="search" type="text" class="form-control" placeholder="Zip Code"/>
               <div class="input-group-btn">
                 <button (click)="onSearch()" class="btn btn-primary" type="button">
                   <span class="glyphicon glyphicon-search"></span>
