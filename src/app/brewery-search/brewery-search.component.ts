@@ -14,4 +14,8 @@ export class BrewerySearchComponent implements OnInit {
 
   ngOnInit() {}
 
+  onSearch() {
+    console.log('Search clicked');
+  }
+
 }
