@@ -1,10 +1,22 @@
+#PreReqs
+
+You'll need node, npm and Angular CLI to work with this project.  
+
+You can get get node and npm here: [https://nodejs.org/en/](https://nodejs.org/en/)
+
+Install angular cli using `npm install -g @angular/cli`
+
+Navigate to your BrewerySearch project folder and install the required project dependencies using: `npm install`
+
+I would also highly suggest doing this demo in Intellij to get the benefit of automatic imports and code completion.
+
 # BrewerySearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
