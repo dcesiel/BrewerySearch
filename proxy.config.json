@@ -1,0 +1,8 @@
+{
+  "/**": {
+    "target": "http://api.brewerydb.com/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
