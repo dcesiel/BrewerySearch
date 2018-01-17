@@ -3,7 +3,9 @@ export class Brewery {
 
   name = '';
 
-  streetAdress = '';
+  streetAddress = '';
+
+  website = '';
 
   logoUrl = '';
 

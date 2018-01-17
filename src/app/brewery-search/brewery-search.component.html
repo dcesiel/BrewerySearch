@@ -29,27 +29,15 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4">
+    <div *ngFor="let brewery of breweryArray" class="col-md-4">
       <div class="media">
         <div class="media-left">
           <a href="#">
-            <img class="media-object" src="https://s3.amazonaws.com/brewerydbapi/brewery/Idm5Y5/upload_O8MoRg-icon.png">
+            <img class="media-object" src="{{brewery.logoUrl}}">
           </a>
         </div>
         <div class="media-body">
-          <h4 class="media-heading"><a href="https://foundersbrewing.com/">Founders Brewing Company</a></h4> 20 Monroe Avenue NW
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="media">
-        <div class="media-left">
-          <a href="#">
-            <img class="media-object" src="https://s3.amazonaws.com/brewerydbapi/brewery/noGtDY/upload_wkGjOC-icon.png">
-          </a>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading"><a href="http://www.bellsbeer.com/">Bell's Brewery</a></h4> 8938 Krum Ave.
+          <h4 class="media-heading"><a href="{{brewery.website}}">{{brewery.name}}</a></h4> {{brewery.streetAddress}}
         </div>
       </div>
     </div>
