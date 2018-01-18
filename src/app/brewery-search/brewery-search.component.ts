@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {Brewery} from './brewery';
 import 'rxjs/add/operator/filter';
+import {BrewerySearchUtil} from './brewery-search-util';
 
 @Component({
   selector: 'app-brewery-search',
@@ -32,18 +33,7 @@ export class BrewerySearchComponent implements OnInit {
   }
 
   setBreweryArray(response: any) {
-    const breweryArray = new Array<Brewery>();
-    if (response.data) {
-      response.data.forEach(breweryInfo => {
-        const brewery = new Brewery();
-        brewery.name = breweryInfo.brewery.name;
-        brewery.streetAddress = breweryInfo.streetAddress;
-        brewery.website = breweryInfo.brewery.website;
-        brewery.logoUrl = (breweryInfo.brewery.images) ? breweryInfo.brewery.images.icon : '';
-        breweryArray.push(brewery);
-      });
-    }
-    this.breweryArray = breweryArray;
+    this.breweryArray = BrewerySearchUtil.setBreweryArray(response);
   }
 
   createForm() {
