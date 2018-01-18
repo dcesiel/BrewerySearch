@@ -1,4 +1,4 @@
-#PreReqs
+# PreReqs
 
 You'll need node, npm and Angular CLI to work with this project.  
 
