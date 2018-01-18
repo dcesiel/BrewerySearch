@@ -8,6 +8,8 @@ Install angular cli using `npm install -g @angular/cli`
 
 Navigate to your BrewerySearch project folder and install the required project dependencies using: `npm install`
 
+To verify that the project works, run `npm start` and navigate to `localhost:4200`.  You should see a Hello World message. 
+
 I would also highly suggest doing this demo in Intellij to get the benefit of automatic imports and code completion.
 
 # BrewerySearch
